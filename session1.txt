@@ -1,0 +1,54 @@
+Step 1
+------
+#I made a directory called "amira ibrahim" By using --> mkdir "amira ibrahim"
+#I chanaged my current to it using --> cd "amira ibrahim"
+
+Step 2
+------
+#Inside "amira ibrahim" dirctory i made new directory called (Document)and chanaged my current to it
+#I made three files in (Document) using-->touch file1.txt file2.txt file3.txt
+#To make sure that the files created successfully show them using-->ls
+
+Step 3
+-------
+#i went back by --> cd..
+#then i made a hidden file in "amira ibrahim" using -->touch ".hidden_file"
+#displaying the hidden file content by using command -->ls -a
+
+Step 4
+------
+#To write in file1.txt i used -->nano file1.txt then to save changes ctrl+s
+#displaying the content of file1.txt using-->cat  file1.txt
+
+Step 5
+------
+#returning to (Document) using -->cd Document
+
+Step 6
+------
+#Creating a unique directory using -->mkdir -
+#to change to (-) directory use command --> cd ./- because if i wrote it like that cd - it will give me Absolute path
+ 
+Step 7
+------
+#i copied all the content of (Document) directory  in "amira ibrahim" directory and named the copied directory "My_Documents"
+using command --> cp -r Document "My_Documents" (in "amira ibrahim" directory)
+#to show the copied file use -->ls
+
+Step 8
+------
+#displaying the hidden file content by using -->cat ".hidden_file"
+
+Step 9
+------
+#moving two files from Document directory to "amira ibrahim" directory by using command --> mv file2.txt file3.txt .. (.. is distination directory)
+#then chanage directory from Document "amira ibrahim" -->cd .. 
+#to make sure that the files moved successfully use -->ls
+
+Step 10
+-------
+#use --> cd ~ to go back to home directory 
+#removing "amira ibrahim" directory by using -->rm -r "amira ibrahim"
+#make sure that the directory remvoed  use -->ls
+
+
