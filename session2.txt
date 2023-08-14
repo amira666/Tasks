@@ -1,0 +1,62 @@
+step 1
+------
+*unzipping updated-task-02.zip  
+
+step 2
+------
+*changed the directory then listing it`s content and reading redme file by using cat
+
+step 3
+------
+*listing the hiden file using>> ls -a 
+
+step 4
+------
+*decompressing level-1 using>> tar -xvf .level-1.tar ,then changing the directory to level-1
+
+step 5
+------
+*reading readme file in level-1
+
+step 6
+------
+*decompressing level-2 using>> tar -xvf .level-2.tar
+
+step 7
+------
+*listing all level-1 content ,then changing the directory to level-2
+
+step 8
+------
+*reading readme file in level-2 that tells there is a level-3 try to find where is it
+
+step 9
+------
+*finding where is lvel-3 using>> find . -iname level-3
+*it shows the relative path for level-3,then changing the directory to the relativ path
+
+step 10
+------
+*decompressing level-3 using>> tar -xvf .level-3.tar
+
+step 11
+------
+*changing the directory to level-3 ,then read the readme file
+
+step 12
+------
+*listing level-3 content >>ls -l to see the link to the file we want
+ 
+step 13
+------
+*reading the file we just found (link),it shows the size of the target file
+
+step 14
+------
+*finding the file by using>> find . -size 73c 
+*then changing the directory to that directory
+
+step 15
+------
+*reading the file it shows that it is the end of the task.
+ 
