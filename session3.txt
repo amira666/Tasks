@@ -1,0 +1,36 @@
+step 1
+------
+*making a new user using -->sudo useradd osc 
+*then setting its password
+*making a new group using--> sudo groupadd osc_group then adding it to user osc -->sudo usermod -aG osc_group osc
+*giving privileges to user osc -->sudo visudo then -->osc ALL=(ALL:ALL) ALL
+
+step 2
+------
+*making a new directory and making three files in it
+*the first (public_file.txt) giving it permission for everyone to read&write-->chmod a+rw public_file.txt (symbolic mode)
+*the second(private_file.txt)giving it permission for user to read&write-->chmod u+rw private_file.txt
+*the third(executable_script.sh)giving it permission for user to read&write&exe-->chmod u+rwx executable_script.sh
+and giving permission for group to read&exe-->chmod g+rx executable_script.sh
+
+step 3
+------
+*chanaging owner of private_file.txt to user(amira) and chanaging group to (osc_group) 
+-->sudo chown amira private_file.txt
+-->sudo chgrp osc_group private_file.txt
+
+step 4
+------
+* start new process in background  -->sleep 1000 & 
+*getting pidof sleep --> pidof sleep
+*Kill the sleep process using -->kill 4036
+*Opening vim and then suspend it using-->ctrl+z
+*Kill vim process using its name -->pkill vim.
+* Verify that the `vim` and `sleep` processes are no longer running using the appropriate command.
+-->ps -ef | grep sleep
+-->ps -ef | grep vim
+
+step 5
+------
+*installing neofetch using-->sudo apt-get install neofetch
+*removing neofetch using-->sudo apt-get remove neofetch
